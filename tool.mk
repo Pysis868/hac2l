@@ -1,8 +1,10 @@
+ATMOSPHERE_LIBRARIES_DIR ?= $(dir $(abspath $(lastword $(MAKEFILE_LIST))))/../../libraries
+
 #---------------------------------------------------------------------------------
 # pull in common stratosphere sysmodule configuration
 #---------------------------------------------------------------------------------
 THIS_MAKEFILE := $(abspath $(lastword $(MAKEFILE_LIST)))
-include $(dir $(abspath $(lastword $(MAKEFILE_LIST))))/../../libraries/config/templates/stratosphere.mk
+include $(ATMOSPHERE_LIBRARIES_DIR)/config/templates/stratosphere.mk
 
 ifeq ($(ATMOSPHERE_BOARD),nx-hac-001)
 export BOARD_TARGET_SUFFIX := .kip
