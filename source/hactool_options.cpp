@@ -182,7 +182,28 @@ namespace ams::hactool {
         printf("hac2l (c) SciresM/Atmosphere-NX\n");
         printf("\n");
         printf("Usage: hac2l [options...] path\n");
-        printf("Full usage print remains TODO\n");
+        printf("Options:\n");
+        // for (int i = 0; i < OptionHandlers.length; i++) {
+        // for (int i = 0; i < 10; i++) {
+        int optionHandlersAmount = (
+          sizeof(OptionHandlers) /
+          sizeof(OptionHandler)
+        );
+        for (int i = 0; i < optionHandlersAmount; i++) {
+          printf(
+            "  --%s",
+            OptionHandlers[i].name
+          );
+
+          if(OptionHandlers[i].short_name) {
+            printf(
+              ", -%c\n",
+              OptionHandlers[i].short_name
+            );
+          } else {
+              printf("\n");
+          }
+        }
     }
 
     const char *GetKeysFilePath(const char *fn) {
