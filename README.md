@@ -6,9 +6,10 @@ It is a modern/rewritten [hactool](https://github.com/SciresM/hactool).
 
 Usage
 =====
-```
-TODO
-```
+See:
+  - `USAGE (MANUAL).md`,
+  - `USAGE (ALPHA).md`,
+  - or `USAGE (PROGRAM).md`.
 
 Licensing
 =====
