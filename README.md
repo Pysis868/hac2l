@@ -11,6 +11,23 @@ See:
   - `USAGE (ALPHA).md`,
   - or `USAGE (PROGRAM).md`.
 
+Building
+=====
+- External Dependencies:
+  - All target platforms:
+    - `stratosphere.hpp`
+      - References:
+        - `source/hactool_main.cpp`
+      - Packages:
+        - All: `Atmosphere-libs`/`libstratosphere`
+- Commands
+  - Cygwin  : `make linux_x64_release`?
+  - Linux   : `make linux_x64_release`
+  - Windows : `make win_x64_release`?
+- Output:
+  - Linux   : `out/generic_linux_x64/release/hac2l`
+  - Windows : `out/generic_windows_x64/release/hac2l`
+
 Licensing
 =====
 
